@@ -16,7 +16,10 @@ spec:
         image: nginxdemos/hello
         resources:
           limits:
-            memory: "128Mi"
+            memory: "512"
             cpu: "500m"
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
         ports:
-        - containerPort: 80
+        - containerPort: 8080
